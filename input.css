@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.menu {
+    @apply fixed -translate-y-full duration-500 top-0 left-0 right-0 pt-16 bg-white pb-3 pl-6;
+}
+
+.menu-item {
+    @apply block hover:text-blue-600 duration-300 text-xl my-3 py-2;
+}
+
+.show-menu {
+    @apply translate-y-0;
+}
+
+.card {
+    @apply mb-5 rounded-lg border-solid border-s-slate-300 shadow-md;
+}
+
+.button {
+    @apply bg-blue-700 text-gray-100 rounded-xl py-2 hover:bg-blue-500 duration-300 text-center shadow-sm;
+    min-width: 9rem;
+}
+
+.reveal {
+    @apply relative translate-y-10 opacity-0 duration-1000;
+}
+
+.active {
+    @apply translate-y-0 opacity-100;
+}
