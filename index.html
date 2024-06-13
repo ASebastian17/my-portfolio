@@ -1,213 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="./ico/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="main.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
-        <title>Portafolio - Sebastian</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./ico/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portafolio - Sebastian</title>
+  </head>
 
-    <body>
-        <header class="sticky top-0 z-40">
-            <nav>
-                <div class="flex justify-end shadow bg-white h-16">
-                    <ul class="hidden flex-row py-5 px-12 text-lg sm:flex">
-                        <li><a href="#acerca-de-mi" class="mr-2 hover:text-blue-600 duration-200">Acerca de mí</a></li>
-                        <li><a href="#conocimientos" class="mx-2 hover:text-blue-600 duration-200">Conocimientos</a></li>
-                        <li><a href="#proyectos" class="mx-2 hover:text-blue-600 duration-200">Proyectos</a></li>
-                        <li><a href="#contacto" class="ml-2 hover:text-blue-600 duration-200">Contacto</a></li>
-                    </ul>
+  <body>
+    <header class="sticky top-0 z-40">
+      <nav>
+        <div class="flex justify-end shadow bg-white h-16">
+          <ul class="hidden flex-row py-5 px-12 text-lg sm:flex">
+            <li>
+              <a
+                href="#acerca-de-mi"
+                class="mr-2 hover:text-blue-600 duration-200"
+                >Acerca de mí</a
+              >
+            </li>
+            <li>
+              <a
+                href="#conocimientos"
+                class="mx-2 hover:text-blue-600 duration-200"
+                >Conocimientos</a
+              >
+            </li>
+            <li>
+              <a href="#proyectos" class="mx-2 hover:text-blue-600 duration-200"
+                >Proyectos</a
+              >
+            </li>
+            <li>
+              <a href="#contacto" class="ml-2 hover:text-blue-600 duration-200"
+                >Contacto</a
+              >
+            </li>
+          </ul>
 
-                    <ul class="menu sm:hidden">
-                        <li><a href="#acerca-de-mi" class="menu-item">Acerca de mí</a></li>
-                        <li><a href="#conocimientos" class="menu-item">Conocimientos</a></li>
-                        <li><a href="#proyectos" class="menu-item">Proyectos</a></li>
-                        <li><a href="#contacto" class="menu-item">Contacto</a></li>
-                    </ul>
+          <ul class="menu sm:hidden">
+            <li><a href="#acerca-de-mi" class="menu-item">Acerca de mí</a></li>
+            <li>
+              <a href="#conocimientos" class="menu-item">Conocimientos</a>
+            </li>
+            <li><a href="#proyectos" class="menu-item">Proyectos</a></li>
+            <li><a href="#contacto" class="menu-item">Contacto</a></li>
+          </ul>
 
-                    <div class="block my-auto mr-4 sm:hidden menu-btn z-50">
-                        <!-- Menu icon -->
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="my-auto w-12 h-12 cursor-pointer block menu-icon"
-                        >
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-
-                        <!-- Close icon -->
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="my-auto w-12 h-12 cursor-pointer hidden close-icon"
-                        >
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-            <div
-                class="flex flex-col bg-slate-900 text-slate-200 min-h-screen bg-no-repeat"
-                style="background-image: url('./img/main-bg.png'); background-size: cover"
+          <div class="block my-auto mr-4 sm:hidden menu-btn z-50">
+            <!-- Menu icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="my-auto w-12 h-12 cursor-pointer block menu-icon"
             >
-                <div class="my-auto ml-6 md:ml-10 lg:ml-16 reveal">
-                    <p class="text-xl mb-3">¡Hola!, soy</p>
-                    <h2 class="font-bold text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-green-500 w-auto"> Sebastian Guerra </h2>
-                    <p class="text-xl mt-5">Desarrollador de Software / Software Developer</p>
-                    <div class="flex flex-row mt-3">
-                        <a href="https://github.com/ASebastian17" class="cursor-pointer">
-                            <img class="w-10 mx-2" src="./img/github.png" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/sebastian-guerra-morales-9bb129163/" class="cursor-pointer">
-                            <img class="w-10 mx-2" src="./img/linkedin.png" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
 
-            <div class="flex flex-col justify-center" id="acerca-de-mi">
-                <h3 class="mx-auto text-4xl font-bold mt-20 mb-6 px-4 pb-3 reveal border-solid border-black border-b-2">Acerca de mí</h3>
-                <p class="text-center text-xl mb-12 mx-7 md:mx-24 lg:mx-52 xl:mx-64 reveal"
-                    >¡Hola! Mi nombre es Sebastian Guerra, me considero una persona apasionada por la tecnología, autodidacta y con
-                    aptitudes para poner en práctica lo aprendido. Considero que ha llegado el momento de hacer uso de mis conocimientos y
-                    habilidades para contribuir con los objetivos de la empresa, así mismo poder desarrollarme en la industria
-                    tecnológica.</p
-                >
-                <a href="./pdf/ARMANDO_SEBASTIAN_GUERRA_MORALES.pdf" class="flex flex-row button mx-auto mb-32 reveal w-40">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6 ml-2"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
-                        />
-                    </svg>
+            <!-- Close icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="my-auto w-12 h-12 cursor-pointer hidden close-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-                    <p class="ml-2">Descarga mi CV</p>
-                </a>
-            </div>
+    <main>
+      <div
+        class="flex flex-col bg-slate-900 text-slate-200 min-h-screen bg-no-repeat"
+        style="
+          background-image: url(&quot;./img/main-bg.png&quot;);
+          background-size: cover;
+        "
+      >
+        <div class="my-auto ml-6 md:ml-10 lg:ml-16 reveal">
+          <p class="text-xl mb-3">¡Hola!, soy</p>
+          <h2
+            class="font-bold text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-green-500 w-auto"
+          >
+            Sebastian Guerra
+          </h2>
+          <p class="text-xl mt-5">
+            Desarrollador de Software / Software Developer
+          </p>
+          <div class="flex flex-row mt-3">
+            <a href="https://github.com/ASebastian17" class="cursor-pointer">
+              <img class="w-10 mx-2" src="./img/github.png" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sebastian-guerra-morales-9bb129163/"
+              class="cursor-pointer"
+            >
+              <img class="w-10 mx-2" src="./img/linkedin.png" />
+            </a>
+          </div>
+        </div>
+      </div>
 
-            <div class="flex flex-col bg-slate-900 text-slate-100 shadow-2xl min-h-screen" id="conocimientos">
-                <h3 class="mx-auto text-4xl font-bold mt-20 reveal px-4 pb-3 border-solid border-slate-100 border-b-2">Conocimientos</h3>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 pt-24 mb-24 mx-auto gap-y-14 gap-x-24 reveal">
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/html-5.png" alt="HTML" />
-                        <p class="font-bold mx-auto">HTML</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/css-3.png" alt="CSS" />
-                        <p class="font-bold mx-auto">CSS</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/js.png" alt="JavaScript" />
-                        <p class="font-bold mx-auto">JavaScript</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/node-js.png" alt="NodeJS" />
-                        <p class="font-bold mx-auto">NodeJS</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/tailwindcss.png" alt="Tailwind CSS" />
-                        <p class="font-bold mx-auto">Tailwind CSS</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/react.png" alt="React" />
-                        <p class="font-bold mx-auto">React</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/nextjs.png" alt="NextJS" />
-                        <p class="font-bold mx-auto">NextJS</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/java.png" alt="Java" />
-                        <p class="font-bold mx-auto">Java</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/springboot.png" alt="Spring Boot" />
-                        <p class="font-bold mx-auto">Spring Boot</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/python.png" alt="Python" />
-                        <p class="font-bold mx-auto">Python</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/git.png" alt="Git" />
-                        <p class="font-bold mx-auto">Git</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/github.png" alt="Github" />
-                        <p class="font-bold mx-auto">Github</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/mysql.png" alt="MySQL" />
-                        <p class="font-bold mx-auto">MySQL</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/postgresql.png" alt="PostgreSQL" />
-                        <p class="font-bold mx-auto">PostgreSQL</p>
-                    </div>
-                    <div class="flex flex-col mx-auto">
-                        <img class="w-20 mx-auto" src="img/mongodb.svg" alt="MongoDB" />
-                        <p class="font-bold mx-auto">MongoDB</p>
-                    </div>
-                </div>
-            </div>
+      <div class="flex flex-col justify-center" id="acerca-de-mi">
+        <h3
+          class="mx-auto text-4xl font-bold mt-20 mb-6 px-4 pb-3 reveal border-solid border-black border-b-2"
+        >
+          Acerca de mí
+        </h3>
+        <p
+          class="text-center text-xl mb-12 mx-7 md:mx-24 lg:mx-52 xl:mx-64 reveal"
+        >
+          ¡Hola! Mi nombre es Sebastian Guerra, me considero una persona
+          apasionada por la tecnología, autodidacta y con aptitudes para poner
+          en práctica lo aprendido. Considero que ha llegado el momento de hacer
+          uso de mis conocimientos y habilidades para contribuir con los
+          objetivos de la empresa, así mismo poder desarrollarme en la industria
+          tecnológica.
+        </p>
+        <a
+          href="./pdf/ARMANDO_SEBASTIAN_GUERRA_MORALES.pdf"
+          class="flex flex-row button mx-auto mb-32 reveal w-40"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 ml-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+            />
+          </svg>
 
-            <div class="flex flex-col pt-20 min-h-screen" id="proyectos">
-                <h3 class="mx-auto text-4xl font-bold reveal px-4 pb-3 border-solid border-black border-b-2">Proyectos</h3>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 px-8 xl:px-20 my-10 gap-10 reveal">
-                    <div class="card flex flex-col">
-                        <img class="rounded-t-lg" src="img/proj_01.png" alt="E-Commerce Web App" />
-                        <h5 class="text-lg mx-auto my-2">E-Commerce App (Web App)</h5>
-                        <a href="https://github.com/ASebastian17/e-commerce-app" class="button mx-auto mb-5">Github</a>
-                    </div>
-                    <div class="card flex flex-col">
-                        <img class="rounded-t-lg" src="img/proj_02.png" alt="Sistema de Venta (Desktop APp)" />
-                        <h5 class="text-lg mx-auto my-2">Sistema de Venta (App de Escritorio)</h5>
-                        <a href="https://github.com/ASebastian17/sistema-venta-desktop" class="button mx-auto mb-5">Github</a>
-                    </div>
-                    <div class="card flex flex-col">
-                        <img class="rounded-t-lg" src="img/proj_03.png" alt="App de Venta API Rest" />
-                        <h5 class="text-lg mx-auto my-2">App de Venta (API Rest)</h5>
-                        <a href="https://github.com/ASebastian17/store-rest-api-java" class="button mx-auto mb-5">Github</a>
-                    </div>
-                </div>
-            </div>
+          <p class="ml-2">Descarga mi CV</p>
+        </a>
+      </div>
 
-            <div class="flex flex-col bg-slate-900 text-slate-100 shadow-2xl pb-32" id="contacto">
-                <h3 class="mx-auto text-4xl font-bold pt-20 mb-6 px-4 pb-3 border-solid border-slate-100 border-b-2 reveal">Contacto</h3>
-                <div class="flex flex-col mx-auto mt-8 reveal">
-                    <p class="text-xl text-center mb-6">Email: armasebas17@hotmail.com</p>
-                    <p class="text-xl text-center mb-6">N° Telf: 947 264 740</p>
-                    <p class="text-xl text-center">Callao, Perú</p>
-                </div>
-            </div>
-        </main>
+      <div
+        class="flex flex-col bg-slate-900 text-slate-100 shadow-2xl min-h-screen"
+        id="conocimientos"
+      >
+        <h3
+          class="mx-auto text-4xl font-bold mt-20 reveal px-4 pb-3 border-solid border-slate-100 border-b-2"
+        >
+          Conocimientos
+        </h3>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 pt-24 mb-24 mx-auto gap-y-14 gap-x-24 reveal"
+        >
+          <div class="flex flex-col mx-auto">
+            <img class="w-20 mx-auto" src="img/js.png" alt="JavaScript" />
+            <p class="font-bold mx-auto">JavaScript</p>
+          </div>
+          <div class="flex flex-col mx-auto">
+            <img class="w-20 mx-auto" src="img/node-js.png" alt="NodeJS" />
+            <p class="font-bold mx-auto">NodeJS</p>
+          </div>
+          <div class="flex flex-col mx-auto">
+            <img
+              class="w-20 mx-auto"
+              src="img/tailwindcss.png"
+              alt="Tailwind CSS"
+            />
+            <p class="font-bold mx-auto">Tailwind CSS</p>
+          </div>
+          <div class="flex flex-col mx-auto">
+            <img class="w-20 mx-auto" src="img/react.png" alt="React" />
+            <p class="font-bold mx-auto">React</p>
+          </div>
+          <div class="flex flex-col mx-auto">
+            <img class="w-20 mx-auto" src="img/nextjs.png" alt="NextJS" />
+            <p class="font-bold mx-auto">NextJS</p>
+          </div>
+          <div class="flex flex-col mx-auto">
+            <img class="w-20 mx-auto" src="img/java.png" alt="Java" />
+            <p class="font-bold mx-auto">Java</p>
+          </div>
+          <div class="flex flex-col mx-auto">
+            <img class="w-20 mx-auto" src="img/git.png" alt="Git" />
+            <p class="font-bold mx-auto">Git</p>
+          </div>
+          <div class="flex flex-col mx-auto">
+            <img class="w-20 mx-auto" src="img/mysql.png" alt="MySQL" />
+            <p class="font-bold mx-auto">MySQL</p>
+          </div>
+          <div class="flex flex-col mx-auto">
+            <img
+              class="w-20 mx-auto"
+              src="img/postgresql.png"
+              alt="PostgreSQL"
+            />
+            <p class="font-bold mx-auto">PostgreSQL</p>
+          </div>
+        </div>
+      </div>
 
-        <footer class="flex w-full bg-gray-950 text-slate-100 h-30">
-            <p class="mx-auto my-auto py-10 text-md">Todos los derechos reservados © 2023.</p>
-        </footer>
+      <div class="flex flex-col pt-20 min-h-screen" id="proyectos">
+        <h3
+          class="mx-auto text-4xl font-bold reveal px-4 pb-3 border-solid border-black border-b-2"
+        >
+          Proyectos
+        </h3>
+        <div
+          class="grid sm:grid-cols-2 lg:grid-cols-3 px-8 xl:px-20 my-10 gap-10 reveal"
+        >
+          <div class="card flex flex-col">
+            <img
+              class="rounded-t-lg"
+              src="img/proj_01.png"
+              alt="E-Commerce Web App"
+            />
+            <h5 class="text-lg mx-auto my-2">E-Commerce App (Web App)</h5>
+            <a
+              href="https://github.com/ASebastian17/e-commerce-app"
+              class="button mx-auto mb-5"
+              >Github</a
+            >
+          </div>
+          <div class="card flex flex-col">
+            <img
+              class="rounded-t-lg"
+              src="img/proj_02.png"
+              alt="Sistema de Venta (Desktop APp)"
+            />
+            <h5 class="text-lg mx-auto my-2">
+              Sistema de Venta (App de Escritorio)
+            </h5>
+            <a
+              href="https://github.com/ASebastian17/sistema-venta-desktop"
+              class="button mx-auto mb-5"
+              >Github</a
+            >
+          </div>
+          <div class="card flex flex-col">
+            <img
+              class="rounded-t-lg"
+              src="img/proj_03.png"
+              alt="App de Venta API Rest"
+            />
+            <h5 class="text-lg mx-auto my-2">App de Venta (API Rest)</h5>
+            <a
+              href="https://github.com/ASebastian17/store-rest-api-java"
+              class="button mx-auto mb-5"
+              >Github</a
+            >
+          </div>
+        </div>
+      </div>
 
-        <script src="./script.js"></script>
-    </body>
+      <div
+        class="flex flex-col bg-slate-900 text-slate-100 shadow-2xl pb-32"
+        id="contacto"
+      >
+        <h3
+          class="mx-auto text-4xl font-bold pt-20 mb-6 px-4 pb-3 border-solid border-slate-100 border-b-2 reveal"
+        >
+          Contacto
+        </h3>
+        <div class="flex flex-col mx-auto mt-8 reveal">
+          <p class="text-xl text-center mb-6">Email: armasebas17@hotmail.com</p>
+          <p class="text-xl text-center mb-6">N° Telf: 947 264 740</p>
+          <p class="text-xl text-center">Callao, Perú</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="flex w-full bg-gray-950 text-slate-100 h-30">
+      <p class="mx-auto my-auto py-10 text-md">
+        Todos los derechos reservados © 2024.
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
